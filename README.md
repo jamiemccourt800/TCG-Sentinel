@@ -22,7 +22,7 @@ A monitoring and alerting system that tracks Pokémon TCG stock across Irish ret
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
+   git clone <repo-url>
    cd TCG-Sentinel
    ```
 
@@ -59,9 +59,9 @@ A monitoring and alerting system that tracks Pokémon TCG stock across Irish ret
    ```bash
    cp .env.example .env
    ```
-   Then edit `.env` with your actual API tokens:
-   - Telegram bot token (get from @BotFather)
-   - Telegram chat ID (send a message to your bot, then call getUpdates)
+   Then edit `.env` with API tokens:
+   - Telegram bot token 
+   - Telegram chat ID 
    - Discord webhook URLs
 
 ## Project Structure
@@ -86,19 +86,7 @@ TCG-Sentinel/
 
 ## Development Status
 
-**Current Phase**: MVP v1 - Environment Setup ✅
-
-### Roadmap
-
-- [x] Day 1: Environment setup
-- [ ] Day 2: Configuration system
-- [ ] Day 3-4: First collector and parser (Smyths)
-- [ ] Day 5: SQLite database
-- [ ] Day 6-7: Decision engine
-- [ ] Day 8: Telegram notifier
-- [ ] Day 9: Pipeline integration
-- [ ] Day 10: Scheduler loop
-- [ ] Day 11+: Additional sources and Discord integration
+**Current Phase**: MVP v1 - Environment Setup
 
 ## Usage
 
