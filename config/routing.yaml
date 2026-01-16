@@ -1,0 +1,38 @@
+# Alert routing configuration
+# Maps alert types to notification channels
+
+routing:
+  stock_in:
+    telegram: true
+    discord: stock_alerts
+    priority: normal
+
+  stock_out:
+    telegram: false
+    discord: stock_alerts
+    priority: low
+
+  new_product:
+    telegram: true
+    discord: stock_alerts
+    priority: normal
+
+  price_drop:
+    telegram: true
+    discord: stock_alerts
+    priority: normal
+
+  event_added:
+    telegram: true
+    discord: events
+    priority: normal
+
+  event_updated:
+    telegram: true
+    discord: events
+    priority: normal
+
+  vendor_added:
+    telegram: true
+    discord: events
+    priority: high

@@ -1,0 +1,28 @@
+# Thresholds and cooldowns for alert generation
+
+# Cooldown periods (seconds) - minimum time between alerts for same item
+cooldowns:
+  stock_in: 3600              # 1 hour between restock alerts
+  stock_out: 0                # No cooldown (rarely used)
+  new_product: 0              # Always alert for new products
+  price_drop: 43200           # 12 hours
+  event_added: 0              # Always alert for new events
+  event_updated: 86400        # 1 day
+  vendor_added: 86400         # 1 day
+
+# Price drop threshold (percentage)
+# Only alert if price drops by at least this much
+price_drop_threshold: 0.10    # 10%
+
+# Circuit breaker - max alerts per hour (prevents spam)
+max_alerts_per_hour: 50
+
+# Geographic filtering for events
+geo_filter:
+  enabled: true
+  allowed_counties:
+    - Louth
+    - Meath
+    - Dublin
+    - Antrim        # Belfast area
+    - Down          # Northern Ireland border

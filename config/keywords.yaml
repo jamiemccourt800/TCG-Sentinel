@@ -1,0 +1,96 @@
+# Keyword filters for Pokemon TCG products
+# Used to filter relevant items from scraped pages
+
+# Products must contain at least one allowlist keyword to be tracked
+allowlist:
+  # General Pokemon TCG terms
+  - pokemon
+  - pokémon
+  - tcg
+  - trading card game
+  - trading cards
+  
+  # Product types
+  - booster
+  - booster box
+  - booster pack
+  - elite trainer box
+  - etb
+  - tin
+  - collection box
+  - premium collection
+  - ultra premium
+  - battle deck
+  - theme deck
+  - starter deck
+  - gift set
+  - gift box
+  
+  # Recent sets (2023-2026)
+  - scarlet violet
+  - scarlet & violet
+  - paldea evolved
+  - obsidian flames
+  - paradox rift
+  - paldean fates
+  - temporal forces
+  - twilight masquerade
+  - shrouded fable
+  - stellar crown
+  - surging sparks
+  - prismatic evolutions
+  
+  # Older popular sets
+  - crown zenith
+  - silver tempest
+  - lost origin
+  - astral radiance
+  - brilliant stars
+  - fusion strike
+  - evolving skies
+  - chilling reign
+  - battle styles
+  - shining fates
+  - vivid voltage
+  - champions path
+  - darkness ablaze
+  - rebel clash
+  - sword shield
+  - sword & shield
+  
+  # Special releases
+  - pokemon 151
+  - poke ball tin
+  - treasure tin
+  - mini tin
+
+# Products containing these keywords will be filtered out
+blocklist:
+  # Other TCGs
+  - yugioh
+  - yu-gi-oh
+  - magic the gathering
+  - mtg
+  - digimon
+  - one piece
+  - dragonball
+  - dragon ball
+  - weiss schwarz
+  - flesh and blood
+  - cardfight vanguard
+  
+  # Non-TCG items that might appear
+  - plush
+  - figure
+  - toy
+  - video game
+  - game console
+  - nintendo switch
+  - playstation
+  - xbox
+  - board game
+  
+  # Avoid singles/individual cards (we're tracking sealed products)
+  - single card
+  - individual card
+  - loose card

@@ -1,0 +1,41 @@
+# Sources to monitor for Pokemon TCG stock and events
+# Each source defines what to monitor, how often, and how to parse it
+
+sources:
+  # Big Box Retailers
+  - name: smyths_pokemon
+    type: retail_category
+    url: https://www.smythstoys.com/ie/en-ie/toys/trading-cards/pokemon-trading-cards/c/SM01020203
+    parser_key: smyths_category
+    poll_interval: 300          # 5 minutes (seconds)
+    tags:
+      - retailer
+      - big_box
+      - ireland
+    enabled: true
+    description: "Smyths Toys Pokemon TCG category page"
+
+  # Hobby Shops
+  - name: eire_hobbies
+    type: retail_category
+    url: https://eirehobbies.ie/collections/pokemon-tcg
+    parser_key: shopify_collection
+    poll_interval: 600          # 10 minutes
+    tags:
+      - hobby_shop
+      - indie
+      - ireland
+    enabled: true
+    description: "Eire Hobbies Pokemon TCG collection (Shopify)"
+
+  # Event Discovery (for future implementation)
+  # - name: dublin_card_show
+  #   type: event_list
+  #   url: https://dublincardshow.ie/events
+  #   parser_key: dcs_events
+  #   poll_interval: 86400      # Daily
+  #   tags:
+  #     - event_discovery
+  #     - card_show
+  #   enabled: false
+  #   description: "Dublin Card Show event listings"
